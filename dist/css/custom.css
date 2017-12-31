@@ -1,0 +1,241 @@
+span.department {
+    color: #fff;
+    font-size: 18px;
+    padding: 13px 10px;
+    float: left;
+    display: inline-block;
+    text-transform: uppercase;
+    margin: 0;
+    box-sizing: border-box;
+}
+.content
+{    
+    padding: 40px 20px!important;
+    width: 100%;
+    height: 100%;
+    float: left;
+    margin: 0;
+}
+.info-box-icon
+{
+    line-height:0!important;
+}
+.view
+{
+    color: rgba(19, 35, 47, 0.9);
+    margin: 0 5px;
+}
+.add-user-entry
+{
+    width: 100%;
+    float:left;
+}
+.more-info-section
+{
+    width: 100%;
+    float: left;
+    margin: 10px 0;
+}
+.more-info-inner-sec
+{
+    float: right;
+    width:50%;
+}
+a.add-more 
+{
+    padding: 7px 20px;
+    margin: 0;
+    display: inline-block;
+    color: #fff;
+    font-size: 16px;
+    border: 2px solid #1ab188!important;
+    border-radius: 4px;
+    margin: 0;
+    background: rgba(19, 35, 47, 0.9);
+    cursor: pointer;
+    float: left;
+}
+input.search-box {
+    min-height: 40px;
+    line-height: 25px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 3px;
+    outline: none!important;
+    border: none;
+    font-size: 16px;
+    color: #999;
+    margin: 0;
+    padding: 0 40px 0 10px;
+    position: relative;
+    display: inline-block;
+    float: left;
+}
+span.search-icons {
+    position: absolute;
+    top: 8px;
+    right: 24px;
+    font-size: 18px;
+    cursor: pointer;
+}
+.view-list
+{
+    max-height: 400px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 100%;
+    float: left;
+    border: 1px solid #ddd;
+    border-radius:4px;
+}
+.more-info-left {
+    width: 50%;
+    float: left;
+    padding:10px 0px;
+}
+span.department-list {
+    font-size: 18px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    float: left;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#style-2::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius:6px;
+	background-color: #F5F5F5;
+}
+
+#style-2::-webkit-scrollbar
+{
+	width:8px;
+	background-color: #F5F5F5;
+}
+
+#style-2::-webkit-scrollbar-thumb
+{
+	border-radius:6px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #ddd;
+}
+span.add-user {
+    text-align: center;
+    float: left;
+    margin: 0;
+    padding: 0px 0;
+    width: 100%;
+    font-size: 18px;
+    text-transform: uppercase;
+    line-height: 0px;
+}
+.save-btn-section {
+    width: 100%;
+    float: left;
+    text-align: center;
+    padding-top: 20px;
+}
+a.save-btn {
+    border: 2px solid #1ab188!important;
+    border-radius:20px;
+    margin: 0;
+    background: rgba(19, 35, 47, 0.9);
+    padding: 8px 20px;
+    color: #fff;
+    font-size: 16px;
+    display: inline-block;
+    outline: none;
+    box-sizing: border-box;
+}
+.header-section
+{
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+    margin: 0;
+    min-height: 50px;
+    background: #1ab188!important;
+    position: fixed;
+    z-index: 13;
+}
+.i-section
+{
+    float:left;
+    width:100%;
+    text-align: center;
+}
+span.department-name {
+    line-height: 45px;
+    font-size: 20px;
+    color: #fff;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+.university-list
+{
+    width: 100%;
+    float: left;
+    background-color: #ecf0f5;
+}
+ol.breadcrumb.custom-bread-cumb 
+{
+    font-size: 14px;
+    width: 100%;
+    float: left;
+    margin-top: 70px;
+}
+button.btn.btn-default.close-btn.save-btn {
+    float: left;
+    margin: 0;
+    padding: 6px 15px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+.custom-align {
+    width: 100%;
+    float: left;
+    text-align: center;
+    margin: 30px 0;
+    padding: 0;
+}
+img.logo-img 
+{
+    height: 119px;
+    float: left;
+    width: 170px;
+    margin-top: -30px;
+    margin-left:12px;
+}
+.user-panel
+{
+    cursor: pointer;
+}
+.active-state
+{
+    color: green;
+    font-weight:600;
+}
+.breadcrumb a:hover, .breadcrumb a:active, .breadcrumb a:focus
+{
+    color: green;
+}
+a.back-link
+ {
+    float: right;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    line-height: 20px;
+    color: rgba(19, 35, 47, 0.9)!important;
+    text-decoration: underline;
+    font-weight: 500;
+}
+.

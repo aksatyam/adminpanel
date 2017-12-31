@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>AdminLTE 2 | Dashboard</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bower_components/jvectormap/jquery-jvectormap.css">
+    <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+    <link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">
+    <link href="stylesheet" href="./dist/css/bootstrap.min.css" />
+    <link href="stylesheet" href="./dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+    <link rel="stylesheet" href="./dist/css/custom.css" />
+</head>
+
+<body class="hold-transition skin-blue sidebar-mini">
+    <div class="wrapper">
+
+        <header class="main-header">
+
+            <!-- Logo -->
+            <a href="dashboard.html" class="logo">
+                <img src="./dist/img/lpu.png" class="logo-img">
+            </a>
+
+            <!-- Header Navbar: style can be found in header.less -->
+            <nav class="navbar navbar-static-top">
+                <!-- Sidebar toggle button-->
+                <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                </a>
+                <span class="department">Department Of Industry</span>
+                <!-- Navbar Right Menu -->
+                <div class="navbar-custom-menu">
+                    <ul class="nav navbar-nav">
+                        <!-- Messages: style can be found in dropdown.less-->
+
+                        <li>
+                            <a href="" class="add-btn">Add More</a>
+                        </li>
+                        <li class="dropdown tasks-menu">
+                            <a href="login.html">
+
+                                <span class="logout">Login
+                                </span>
+                            </a>
+                        </li>
+
+
+
+                    </ul>
+                </div>
+
+            </nav>
+        </header>
+        <!-- Left side column. contains the logo and sidebar -->
+        <aside class="main-sidebar">
+            <!-- sidebar: style can be found in sidebar.less -->
+            <section class="sidebar">
+                <!-- Sidebar user panel -->
+                <div class="user-panel">
+                    <div class="pull-left image">
+                        <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                    </div>
+                    <div class="pull-left info">
+                        <p>Pritam Soni</p>
+                        <a href="#">
+                            <i class="fa fa-circle text-success"></i> Online</a>
+                    </div>
+                </div>
+                <ul class="sidebar-menu" data-widget="tree">
+
+                    <li class="treeview">
+                        <a href="#">
+                            <i class="fa fa-industry" aria-hidden="true"></i>
+                            <span>Industry Categories</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li>
+                                <a href="javascript:void(0);" data-toggle="modal" data-target="#myModal">
+                                    <i class="fa fa-plus" aria-hidden="true"></i>Add Industry</a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                </ul>
+            </section>
+            <!-- /.sidebar -->
+        </aside>
+
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <!-- Content Header (Page header) -->
+            <section class="content-header">
+                <h1>
+                    Industry Panel
+                </h1>
+
+            </section>
+
+            <!-- Main content -->
+            <section class="content">
+                <div class="add-user-entry">
+                    <ol class="breadcrumb">
+                        <li>
+                            <a href="#">Company List</a>
+                        </li>
+                        <li>
+                            <a href="#">Add UserDetails</a>
+                        </li>
+
+                    </ol>
+                    <div class="more-info-section">
+                        <div class="more-info-left">
+                            <span class="department-list">Department List</span>
+                        </div>
+                        <div class="more-info-inner-sec">
+                            <div class="row">
+                                <div class="col-md-8 col-sm-6 col-lg-8">
+                                    <span class="search-item">
+                                        <input type="text" placeholder="Search User" class="search-box" />
+                                        <span class="search-icons">
+                                            <i class="fa fa-search" aria-hidden="true"></i>
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="col-md-4 col-sm-6 col-lg-4">
+                                    <a href="javascript:void(0);" class="add-more" data-toggle="modal" data-target="#myModal2">Add More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="view-list" id="style-2">
+                        <table class="table table-striped custom-table">
+                            <thead>
+                                <tr>
+                                    <th>User Name</th>
+                                    <th>Password</th>
+                                    <th>UID</th>
+                                    <th>Entery Date</th>
+                                    <th>Status</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>Pritam</th>
+                                    <td>11307116</td>
+                                    <td>118982</td>
+                                    <td>12/Aug/2016</td>
+                                    <td>Active</td>
+                                    <td>
+                                        <span>
+                                            <a href="javascript:void(0);">
+                                                <span class="edit">
+                                                    <i class="fa fa-pencil waves-effect waves-light" aria-hidden="true"></i>
+                                                </span>
+                                            </a>
+                                            <a href="javascript:void(0);">
+                                                <span class="delete">
+                                                    <i class="fa fa-trash-o" aria-hidden="true"></i>
+                                                </span>
+                                            </a>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Pritam</th>
+                                    <td>11307116</td>
+                                    <td>118982</td>
+                                    <td>12/Aug/2016</td>
+                                    <td>Active</td>
+                                    <td>
+                                        <span>
+                                            <a href="javascript:void(0);">
+                                                <span class="edit">
+                                                    <i class="fa fa-pencil waves-effect waves-light" aria-hidden="true"></i>
+                                                </span>
+                                            </a>
+                                            <a href="javascript:void(0);">
+                                                <span class="delete">
+                                                    <i class="fa fa-trash-o" aria-hidden="true"></i>
+                                                </span>
+                                            </a>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Pritam</th>
+                                    <td>11307116</td>
+                                    <td>118982</td>
+                                    <td>12/Aug/2016</td>
+                                    <td>Active</td>
+                                    <td>
+                                        <span>
+                                            <a href="javascript:void(0);">
+                                                <span class="edit">
+                                                    <i class="fa fa-pencil waves-effect waves-light" aria-hidden="true"></i>
+                                                </span>
+                                            </a>
+                                            <a href="javascript:void(0);">
+                                                <span class="delete">
+                                                    <i class="fa fa-trash-o" aria-hidden="true"></i>
+                                                </span>
+                                            </a>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Pritam</th>
+                                    <td>11307116</td>
+                                    <td>118982</td>
+                                    <td>12/Aug/2016</td>
+                                    <td>Active</td>
+                                    <td>
+                                        <span>
+                                            <a href="javascript:void(0);">
+                                                <span class="edit">
+                                                    <i class="fa fa-pencil waves-effect waves-light" aria-hidden="true"></i>
+                                                </span>
+                                            </a>
+                                            <a href="javascript:void(0);">
+                                                <span class="delete">
+                                                    <i class="fa fa-trash-o" aria-hidden="true"></i>
+                                                </span>
+                                            </a>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Pritam</th>
+                                    <td>11307116</td>
+                                    <td>118982</td>
+                                    <td>12/Aug/2016</td>
+                                    <td>Active</td>
+                                    <td>
+                                        <span>
+                                            <a href="javascript:void(0);">
+                                                <span class="edit">
+                                                    <i class="fa fa-pencil waves-effect waves-light" aria-hidden="true"></i>
+                                                </span>
+                                            </a>
+                                            <a href="javascript:void(0);">
+                                                <span class="delete">
+                                                    <i class="fa fa-trash-o" aria-hidden="true"></i>
+                                                </span>
+                                            </a>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Pritam</th>
+                                    <td>11307116</td>
+                                    <td>118982</td>
+                                    <td>12/Aug/2016</td>
+                                    <td>Active</td>
+                                    <td>
+                                        <span>
+                                            <a href="javascript:void(0);">
+                                                <span class="edit">
+                                                    <i class="fa fa-pencil waves-effect waves-light" aria-hidden="true"></i>
+                                                </span>
+                                            </a>
+                                            <a href="javascript:void(0);">
+                                                <span class="delete">
+                                                    <i class="fa fa-trash-o" aria-hidden="true"></i>
+                                                </span>
+                                            </a>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Pritam</th>
+                                    <td>11307116</td>
+                                    <td>118982</td>
+                                    <td>12/Aug/2016</td>
+                                    <td>Active</td>
+                                    <td>
+                                        <span>
+                                            <a href="javascript:void(0);">
+                                                <span class="edit">
+                                                    <i class="fa fa-pencil waves-effect waves-light" aria-hidden="true"></i>
+                                                </span>
+                                            </a>
+                                            <a href="javascript:void(0);">
+                                                <span class="delete">
+                                                    <i class="fa fa-trash-o" aria-hidden="true"></i>
+                                                </span>
+                                            </a>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Pritam</th>
+                                    <td>11307116</td>
+                                    <td>118982</td>
+                                    <td>12/Aug/2016</td>
+                                    <td>Active</td>
+                                    <td>
+                                        <span>
+                                            <a href="javascript:void(0);">
+                                                <span class="edit">
+                                                    <i class="fa fa-pencil waves-effect waves-light" aria-hidden="true"></i>
+                                                </span>
+                                            </a>
+                                            <a href="javascript:void(0);">
+                                                <span class="delete">
+                                                    <i class="fa fa-trash-o" aria-hidden="true"></i>
+                                                </span>
+                                            </a>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Pritam</th>
+                                    <td>11307116</td>
+                                    <td>118982</td>
+                                    <td>12/Aug/2016</td>
+                                    <td>Active</td>
+                                    <td>
+                                        <span>
+                                            <a href="javascript:void(0);">
+                                                <span class="edit">
+                                                    <i class="fa fa-pencil waves-effect waves-light" aria-hidden="true"></i>
+                                                </span>
+                                            </a>
+                                            <a href="javascript:void(0);">
+                                                <span class="delete">
+                                                    <i class="fa fa-trash-o" aria-hidden="true"></i>
+                                                </span>
+                                            </a>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Pritam</th>
+                                    <td>11307116</td>
+                                    <td>118982</td>
+                                    <td>12/Aug/2016</td>
+                                    <td>Active</td>
+                                    <td>
+                                        <span>
+                                            <a href="javascript:void(0);">
+                                                <span class="edit">
+                                                    <i class="fa fa-pencil waves-effect waves-light" aria-hidden="true"></i>
+                                                </span>
+                                            </a>
+                                            <a href="javascript:void(0);">
+                                                <span class="delete">
+                                                    <i class="fa fa-trash-o" aria-hidden="true"></i>
+                                                </span>
+                                            </a>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Pritam</th>
+                                    <td>11307116</td>
+                                    <td>118982</td>
+                                    <td>12/Aug/2016</td>
+                                    <td>Active</td>
+                                    <td>
+                                        <span>
+                                            <a href="javascript:void(0);">
+                                                <span class="edit">
+                                                    <i class="fa fa-pencil waves-effect waves-light" aria-hidden="true"></i>
+                                                </span>
+                                            </a>
+                                            <a href="javascript:void(0);">
+                                                <span class="delete">
+                                                    <i class="fa fa-trash-o" aria-hidden="true"></i>
+                                                </span>
+                                            </a>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Pritam</th>
+                                    <td>11307116</td>
+                                    <td>118982</td>
+                                    <td>12/Aug/2016</td>
+                                    <td>Active</td>
+                                    <td>
+                                        <span>
+                                            <a href="javascript:void(0);">
+                                                <span class="edit">
+                                                    <i class="fa fa-pencil waves-effect waves-light" aria-hidden="true"></i>
+                                                </span>
+                                            </a>
+                                            <a href="javascript:void(0);">
+                                                <span class="delete">
+                                                    <i class="fa fa-trash-o" aria-hidden="true"></i>
+                                                </span>
+                                            </a>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Pritam</th>
+                                    <td>11307116</td>
+                                    <td>118982</td>
+                                    <td>12/Aug/2016</td>
+                                    <td>Active</td>
+                                    <td>
+                                        <span>
+                                            <a href="javascript:void(0);">
+                                                <span class="edit">
+                                                    <i class="fa fa-pencil waves-effect waves-light" aria-hidden="true"></i>
+                                                </span>
+                                            </a>
+                                            <a href="javascript:void(0);">
+                                                <span class="delete">
+                                                    <i class="fa fa-trash-o" aria-hidden="true"></i>
+                                                </span>
+                                            </a>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Pritam</th>
+                                    <td>11307116</td>
+                                    <td>118982</td>
+                                    <td>12/Aug/2016</td>
+                                    <td>Active</td>
+                                    <td>
+                                        <span>
+                                            <a href="javascript:void(0);">
+                                                <span class="edit">
+                                                    <i class="fa fa-pencil waves-effect waves-light" aria-hidden="true"></i>
+                                                </span>
+                                            </a>
+                                            <a href="javascript:void(0);">
+                                                <span class="delete">
+                                                    <i class="fa fa-trash-o" aria-hidden="true"></i>
+                                                </span>
+                                            </a>
+                                        </span>
+                                    </td>
+                                </tr>
+
+
+
+
+
+
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </div>
+    <div class="modal fade in" id="myModal" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                    <h4 class="modal-title">Industry Details</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="industry-inner-section">
+                        <form>
+                            <div class="each-form">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <input type="text" class="form-control" placeholder="Industry Name">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="each-form">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <input type="text" class="form-control" placeholder="Industry Id">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="each-form">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <input type="text" class="form-control" placeholder="Industry Location">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="each-form">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <input type="text" class="form-control" placeholder="Industry PIN">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="each-form">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <textarea placeholder="Description"></textarea>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default close-btn">Submit</button>
+                        <button type="button" class="btn btn-default close-btn" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="modal fade" id="myModal2" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Department List</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="industry-inner-section">
+                        <form>
+                            <div class="each-form">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <input type="text" class="form-control" placeholder="Reg No">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="each-form">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <input type="text" class="form-control" placeholder="User Name">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="each-form">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <input type="text" class="form-control" placeholder="Password">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="each-form">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <input type="text" class="form-control" placeholder="UID">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="each-form">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <input type="text" class="form-control" placeholder="Entry Date">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="each-form">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <input type="text" class="form-control" placeholder="Last Date">
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </form>
+                    </div>
+                    <div class="custom-align">
+                        <button type="button" class="btn btn-default close-btn save-btn">Save</button>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ./wrapper -->
+
+    <!-- jQuery 3 -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap 3.3.7 -->
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="dist/js/adminlte.min.js"></script>
+
+</body>
+
+</html>
